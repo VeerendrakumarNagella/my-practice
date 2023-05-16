@@ -1,0 +1,363 @@
+<html>
+
+<head>
+  <title>My App</title>
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+
+  <style>
+    table,
+    th,
+    td {
+      padding: 7px 15px;
+    }
+
+    th {
+      background-color: lightblue;
+    }
+
+    tr:nth-child(2n) td {
+      background-color: lightgrey;
+    }
+
+    .internal-links {
+      color: rgb(0, 149, 255);
+    }
+
+    .internal-section {
+      color: rgb(255, 0, 89);
+    }
+
+    .external-links {
+      color: rgb(43, 0, 255);
+    }
+
+    .links {
+      padding: 6px 13px;
+      background-color: lightblue;
+      text-decoration: none;
+    }
+
+    .internal-links.mail {
+      color: brown;
+    }
+
+    .internal-links.phone {
+      color: crimson;
+    }
+
+    #heading {
+      color: red;
+    }
+  </style>
+</head>
+
+<body id="body-section">
+  <!-- Headings  -->
+  <h1 id="heading">Hello world!</h1>
+  <h2 id="heading">Hello world!</h2>
+  <h3>Hello world</h3>
+  <h4>Hello world</h4>
+  <h5>Hello world</h5>
+  <h6>Hello world</h6>
+
+  <!-- paras  -->
+  <p>
+    A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and
+    after a paragraph.
+  </p>
+
+  <!-- Formattings -->
+  <p>
+    My name is
+    <b> Test </b>
+    <strong> Test </strong>,
+    age is
+    <i>30</i> years
+    <em>4</em>
+    <mark>months</mark>
+    <ins>employee name</ins>
+    <del>test person</del>
+    10<sup>th</sup> April, 2023
+
+    log<sub>2</sub>10 = 1
+  </p>
+
+  <!-- 
+    Anchor
+    1. Linking the external pages
+    2. Linking the internal pages
+    3. Linking the internal sections
+    
+
+
+   -->
+
+  <a class="links external-links" href="https://www.google.com" title="This is my google dashboard page">
+    Google
+  </a>
+
+  &nbsp;
+
+  <a class="links external-links" href="https://www.facebook.com" title="This is my google dashboard page">
+    Facebook
+  </a>
+  <br>
+  <br>
+  <a class="links internal-links" href="./pages/Home.html" target="_blank">Home</a>
+  <!-- <a href="C:/Users/manic/Desktop/my-practice/html/pages/Home.html">Home</a> -->
+  <a class="links internal-links" href="./pages/About.html">About</a>
+  <a class="links internal-links" href="./pages/Contact.html">Contact</a>
+  <a class="links internal-links mail" href="mailto:veerendra.nagella@gmail.com;abc.gmail@mail.com">Send us
+    queries</a>
+  <a class="links internal-links phone" href="tel:+919603599809">Call us</a>
+  <br>
+  <br>
+  <a class="links internal-section" href="#body-section">Goto top</a>
+
+  <!-- 
+    quotations
+   -->
+  <p>The quote is: </p>
+  <blockquote cite="https://en.wikipedia.org/wiki/Don%27t_judge_a_book_by_its_cover">
+    Don't judge a book by it's cover
+  </blockquote>
+  <address>
+    103, Orange blooms, <br>
+    White fields, Kondapur, <br>
+    Hyderabad, TS, <br>
+    India, 500081
+  </address>
+  <br />
+  <img src="../images/monalisa.jfif" alt="Monalisa" />
+  <p><cite>The Monalisa</cite> is painted by <q>ABC</q></p>
+
+
+  <!-- User Data table -->
+
+  <h2>User Data table</h2>
+
+  <TabLE border="1" style="border-collapse: collapse;">
+    <thead>
+      <tr>
+        <th>S. No</th>
+        <th>Name</th>
+        <th>Position</th>
+        <th>Age</th>
+        <th>City</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Ramu</td>
+        <td>Developer</td>
+        <td>28</td>
+        <td>Ongole</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Mani</td>
+        <td>Associate</td>
+        <td>22</td>
+        <td>Ongole</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Soni</td>
+        <td>Lead Developer</td>
+        <td> - </td>
+        <td>Vizag</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Narendra</td>
+        <td>Senior Engineer</td>
+        <td> 28 </td>
+        <td>Guntur</td>
+      </tr>
+    </tbody>
+  </TabLE>
+
+  <h2>Salt concentration</h2>
+  <table border="1" style="border-collapse: collapse;">
+    <thead>
+      <tr>
+        <th colspan="6">Salt concentration and Light transmittance</th>
+      </tr>
+      <tr>
+        <th rowspan="2">Salt concentration (%)</th>
+        <th colspan="5">Transmittance (%T)</th>
+      </tr>
+      <tr>
+        <th>Trial #1</th>
+        <th>Trial #2</th>
+        <th>Trial #3</th>
+        <th>Trial #4</th>
+        <th>Trial #5</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>0</td>
+        <td>77.25</td>
+        <td>79.87</td>
+        <td>74.56</td>
+        <td>72.56</td>
+        <td>74.89</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>77.25</td>
+        <td>79.87</td>
+        <td>74.56</td>
+        <td>72.56</td>
+        <td>74.89</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>77.25</td>
+        <td>79.87</td>
+        <td>74.56</td>
+        <td>72.56</td>
+        <td>74.89</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>77.25</td>
+        <td>79.87</td>
+        <td>74.56</td>
+        <td>72.56</td>
+        <td>74.89</td>
+      </tr>
+      <tr>
+        <td>0</td>
+        <td>77.25</td>
+        <td>79.87</td>
+        <td>74.56</td>
+        <td>72.56</td>
+        <td>74.89</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Biology for life</h2>
+  <table border="1" style="border-collapse: collapse;">
+    <caption>My table</caption>
+    <thead>
+      <tr>
+        <th colspan="6">
+          Height of seedings for greminted seeds
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Water type
+        </th>
+        <th>
+          Trail
+        </th>
+        <th>
+          Trial avg of seeding height
+        </th>
+        <th>
+          Trial standard deviation
+        </th>
+        <th>
+          Overall avg height
+        </th>
+        <th>
+          Overall standard deviation
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">
+          Iodised
+        </td>
+        <td>3</td>
+        <td>1</td>
+        <td>0.01</td>
+        <td>0.8</td>
+        <td rowspan="2">0.1</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>1</td>
+        <td>0.01</td>
+        <td>0.8</td>
+      </tr>
+      <tr>
+        <td rowspan="2">
+          Non Iodised
+        </td>
+        <td>3</td>
+        <td>1</td>
+        <td>0.01</td>
+        <td>0.8</td>
+        <td rowspan="2">0.1</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>1</td>
+        <td>0.01</td>
+        <td>0.8</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Lists -->
+
+  <h3>Animals - Ordered</h3>
+  <ol>
+    <li>Lion</li>
+    <li>Tiger</li>
+    <li>Dog</li>
+    <li>Cat</li>
+  </ol>
+
+  <h3>Birds - Unordered</h3>
+  <ul>
+    <li>Eagle</li>
+    <li>Parrot</li>
+    <li>Peacock</li>
+    <li>Piegeon</li>
+  </ul>
+
+  <h3>Drinks - Description lists</h3>
+  <dt>Coffee</dt>
+  <dd>This is hot milk drink</dd>
+  <dt>Tea</dt>
+  <dd>This is hot milk drink</dd>
+
+  <!-- Iframes -->
+  <h2>
+    Iframe internal page
+  </h2>
+  <iframe src="./demo.html" frameborder="0"></iframe>
+
+
+  <h2>Iframe external page</h2>
+  <iframe width="894" height="503" src="https://www.youtube.com/embed/8aAHi66YNsw?list=RD8aAHi66YNsw"
+    title="మళ్ళీ మళ్ళీ వినాలనిపించే సాంగ్ - Maate Raani Chinna Dhaani Song | SP Balasubramaniam | Radhika"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
+
+  <h2>Iframe - Target for a Link</h2>
+
+  <iframe src="./demo.html" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+
+  <p><a href="./pages/Contact.html" target="iframe_a">Contact</a></p>
+
+
+  <video controls autoplay muted>
+    <source src="../mov_bbb.mp4">
+  </video>
+</body>
+
+<script>
+  document.getElementById("heading").innerHTML = "Hello India!";
+</script>
+
+</html>

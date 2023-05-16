@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Form</title>
+</head>
+
+<body>
+  <h2>
+    Signup form
+  </h2>
+  <form method="post">
+    <label for="username">User Name: </label>
+    <input type="text" placeholder="Enter username here" name="username" id="username" value="Veerendra" required
+      disabled />
+    <br />
+    <br />
+    <label>
+      Email:
+      <input type="email" placeholder="Enter email here" name="email" required value="mail@mail.com" readonly>
+    </label>
+    <br />
+    <br />
+    <input type="password" placeholder="Enter password here" name="password" required minlength="8" maxlength="12"
+      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password field that must contain 8 or more characters that
+      are of at least one number, and one uppercase and lowercase letter:">
+    <br />
+    <br />
+    <input type="number" placeholder="Enter age here" name="age" required min="18" max="60">
+    <br />
+    <br />
+    <input type="date" placeholder="Enter DOB here" name="dob" required>
+    <br />
+    <br />
+    <input type="file" placeholder="Enter resume here" name="resume" required>
+    <br />
+    <br />
+    <input type="checkbox" name="lang" value="telugu"> Telugu
+    <input type="checkbox" name="lang" value="english"> English
+    <input type="checkbox" name="lang" value="hindi"> Hindi
+    <input type="checkbox" name="lang" value="tamil"> Tamil
+    <input type="checkbox" name="lang" value="none"> None of these
+    <br />
+    <br />
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female
+    <input type="radio" name="gender" value="trans"> Transgender
+    <br />
+    <br />
+    <select name="state" required>
+      <option value="">Select your state</option>
+      <option value="ap">Andhra Pradesh</option>
+      <option value="ts">Telangana</option>
+      <option value="ks">Karnataka</option>
+      <option value="mh">Maharasthra</option>
+    </select>
+    <br />
+    <input type="range" name="range" id="">
+    <br />
+    <textarea placeholder="Brief intro" name="intro" required></textarea>
+    <br />
+    <br />
+    <!-- <input type="submit" value="SignUp"> -->
+    <button>Signup</button>
+    <input type="reset" value="Clear">
+
+    <a href="#">Google</a>
+
+
+  </form>
+</body>
+
+</html>
