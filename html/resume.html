@@ -8,6 +8,9 @@
   <meta name="keywords" content="resume, web developer, react, html, css, javascript">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Resume</title>
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../images/favicon.png" rel="shortcut icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <style>
     * {
       font-family: sans-serif;
@@ -29,12 +32,43 @@
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
+      background-color: #f8f8a3;
+      padding: 15px;
+    }
+
+    .experience {
+      background-image: url(../images/banner.jpg);
+      color: white;
+      padding: 15px;
+    }
+
+    section.technical {
+      background-image: url(../images/temple.png);
+      color: white;
+      padding: 15px;
+      margin: 15px 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .qualification {
+      background-color: #bfd1e0;
+      padding: 15px;
+    }
+
+    .qualification h3 {
+      background-image: url(../images/degree.png);
+      background-size: 24px;
+      background-repeat: no-repeat;
+      background-position: 22% 50%;
     }
 
     .bio-info>* {
       margin: 8px 0;
     }
 
+    /* Table styles   */
     table,
     th,
     td {
@@ -44,6 +78,18 @@
     li {
       padding: 3px 0;
     }
+
+    h1 {
+      color: red;
+      font-size: 32px;
+    }
+
+    a {
+      /* color: blue; 
+      /* color: rgb(100, 100, 100); /* 0 - 255, 0 min, 255 max */
+      /* color: #0000ff; */
+      color: #545a13;
+    }
   </style>
 </head>
 
@@ -51,7 +97,8 @@
   <div class="resume container">
     <section class="bio-data">
       <div class="bio-info">
-        <h1>Veerendra Kumar</h1>
+        <h1 style="color: red; font-size: 32px">Veerendra Kumar</h1>
+
         <p>
           <a href="mailto:veerendra.nagella@gmail.com">veerendra.nagella@gmail.com</a>
         </p>
