@@ -14,6 +14,8 @@
   <style>
     * {
       font-family: sans-serif;
+      box-sizing: border-box;
+      line-height: 1.6;
     }
 
     body {
@@ -32,8 +34,16 @@
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
-      background-color: #f8f8a3;
+      box-shadow: 1px 1px 10px 2px #e1e1e1;
       padding: 15px;
+    }
+
+    .user-image img {
+      width: 100px;
+      height: 100px;
+      object-position: 42% 50%;
+      object-fit: cover;
+      border-radius: 50%;
     }
 
     .experience {
@@ -66,6 +76,7 @@
 
     .bio-info>* {
       margin: 8px 0;
+      text-shadow: 3px 3px 9px #991313;
     }
 
     /* Table styles   */
@@ -90,11 +101,46 @@
       /* color: #0000ff; */
       color: #545a13;
     }
+
+    section.current-exp {
+      margin: 15px 0;
+      padding: 15px;
+      border: 2px solid green;
+    }
+
+    .current-exp h3 {
+      color: red;
+    }
+
+    .current-exp~a,
+    button {
+      background-color: teal;
+      color: white;
+      padding: 7px 13px;
+      text-decoration: none;
+      display: inline-block;
+      border: none;
+      width: 120px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    input {
+      padding: 6px 13px;
+      border: 1px solid gray;
+      outline: none;
+      border-radius: 2px;
+    }
+
+    input:focus {
+      outline: 1px solid gray;
+    }
   </style>
 </head>
 
 <body>
-  <div class="resume container">
+  <div id="top-container" class="resume container">
     <section class="bio-data">
       <div class="bio-info">
         <h1 style="color: red; font-size: 32px">Veerendra Kumar</h1>
@@ -107,11 +153,11 @@
         </p>
       </div>
       <div class="user-image">
-        <img src="../images/monalisa.jfif" alt="myImage" height="100px">
+        <img src="../images/kohli.jpg" alt="myImage" height="100px">
       </div>
     </section>
     <hr />
-    <section class="experience">
+    <section class="experience" id="summary">
       <h3>
         <ins>Experience Summary</ins>
       </h3>
@@ -244,6 +290,11 @@
         ReactJS, Redux, PWA, SASS, Java, SQL, Jenkins, AWS, Bitbucket, Jira
       </p>
     </section>
+    <a href="#top-container">Goto top</a>
+    <a href="#summary" title="Goto Exp Summary">Goto Exp Summary</a>
+    <br />
+    <button>Submit</button>
+    <input type="text" placeholder="Enter dummy value" />
   </div>
 </body>
 
