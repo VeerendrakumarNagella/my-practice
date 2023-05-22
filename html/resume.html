@@ -11,11 +11,18 @@
   <link href="../css/style.css" rel="stylesheet">
   <link href="../images/favicon.png" rel="shortcut icon">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
   <style>
     * {
       font-family: sans-serif;
       box-sizing: border-box;
       line-height: 1.6;
+      font-family: 'Roboto', sans-serif;
     }
 
     body {
@@ -24,7 +31,9 @@
     }
 
     .resume.container {
+      width: 90%;
       max-width: 700px;
+      min-width: 500px;
       margin: auto;
       background-color: white;
       padding: 20px;
@@ -41,7 +50,7 @@
     .user-image img {
       width: 100px;
       height: 100px;
-      object-position: 42% 50%;
+      object-position: 60% 50%;
       object-fit: cover;
       border-radius: 50%;
     }
@@ -76,7 +85,8 @@
 
     .bio-info>* {
       margin: 8px 0;
-      text-shadow: 3px 3px 9px #991313;
+      text-shadow: 3px 3px 14px #ae9797;
+      font-style: italic;
     }
 
     /* Table styles   */
@@ -112,18 +122,18 @@
       color: red;
     }
 
-    .current-exp~a,
+    .actions a,
     button {
       background-color: teal;
       color: white;
       padding: 7px 13px;
       text-decoration: none;
-      display: inline-block;
       border: none;
       width: 120px;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      display: inline-block;
     }
 
     input {
@@ -133,8 +143,53 @@
       border-radius: 2px;
     }
 
+    .actions {
+      display: flex;
+      width: 100%;
+      border: 1px solid green;
+      height: 100px;
+      justify-content: space-between;
+      padding: 15px;
+      align-items: center;
+      margin: 15px 0;
+    }
+
     input:focus {
       outline: 1px solid gray;
+    }
+
+    .my-fav {
+      border: 1px solid green;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .my-fav-item img {
+      height: 100px;
+      width: 100px;
+      object-fit: cover;
+      object-position: center;
+      box-shadow: 1px 1px 10px 2px #e1e1e1;
+      display: inline-block;
+      border-radius: 50%;
+
+    }
+
+    .my-fav-item {
+      box-shadow: 1px 1px 10px 2px #8f6767;
+      padding: 15px;
+      flex-grow: 1;
+      flex-shrink: 1;
+      width: 31%;
+      margin: 1%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      min-width: 175px;
     }
   </style>
 </head>
@@ -153,7 +208,7 @@
         </p>
       </div>
       <div class="user-image">
-        <img src="../images/kohli.jpg" alt="myImage" height="100px">
+        <img src="../images/Rohit.jpg" alt="myImage" height="100px">
       </div>
     </section>
     <hr />
@@ -290,12 +345,51 @@
         ReactJS, Redux, PWA, SASS, Java, SQL, Jenkins, AWS, Bitbucket, Jira
       </p>
     </section>
-    <a href="#top-container">Goto top</a>
-    <a href="#summary" title="Goto Exp Summary">Goto Exp Summary</a>
-    <br />
-    <button>Submit</button>
-    <input type="text" placeholder="Enter dummy value" />
-  </div>
+    <section class="my-fav">
+      <div class="my-fav-item">
+        <h4>Virat Kohli</h4>
+        <img src="../images/kohli.jpg" alt="Kohli">
+      </div>
+      <div class="my-fav-item">
+        <h4>Rohit Sharma</h4>
+        <img src="../images/Rohit.jpg" alt="Rohit">
+
+      </div>
+      <div class="my-fav-item">
+        <h4>MS Dhoni</h4>
+        <img src="../images/dhoni.png" alt="Dhoni">
+
+      </div>
+      <div class="my-fav-item">
+        <h4>Virat Kohli</h4>
+        <img src="../images/kohli.jpg" alt="Kohli">
+      </div>
+      <div class="my-fav-item">
+        <h4>Rohit Sharma</h4>
+        <img src="../images/Rohit.jpg" alt="Rohit">
+
+      </div>
+      <div class="my-fav-item">
+        <h4>MS Dhoni</h4>
+        <img src="../images/dhoni.png" alt="Dhoni">
+
+      </div>
+      <div class="my-fav-item">
+        <h4>Virat Kohli</h4>
+        <img src="../images/kohli.jpg" alt="Kohli">
+      </div>
+      <div class="my-fav-item">
+        <h4>Rohit Sharma</h4>
+        <img src="../images/Rohit.jpg" alt="Rohit">
+
+      </div>
+    </section>
+    <div class="actions">
+      <a href="#top-container">Goto top</a>
+      <a href="#summary" title="Goto Exp Summary">Goto Exp Summary</a>
+      <button>Submit</button>
+      <input type="text" placeholder="Enter dummy value" />
+    </div>
 </body>
 
 </html>
