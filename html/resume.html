@@ -62,7 +62,7 @@
       background-image: url(../images/banner.jpg);
       color: white;
       padding: 15px;
-      height: 200px;
+      height: 250px;
       overflow: auto;
     }
 
@@ -74,6 +74,22 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+      position: relative;
+    }
+
+    section.technical::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: black;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.5;
+    }
+
+    section.technical>* {
+      position: relative;
     }
 
     .qualification {
@@ -113,8 +129,9 @@
     a {
       /* color: blue; 
       /* color: rgb(100, 100, 100); /* 0 - 255, 0 min, 255 max */
-      /* color: #0000ff; */
+      /* color: #0000ff; 
       color: #545a13;
+      */
     }
 
     section.current-exp {
@@ -157,7 +174,9 @@
     }
 
     input:focus {
-      outline: 1px solid gray;
+      outline: 2px solid gray;
+      background-color: gray;
+      color: white;
     }
 
     .my-fav {
@@ -193,6 +212,53 @@
       flex-direction: column;
       min-width: 175px;
     }
+
+    .center-item {
+      margin: 15px 0;
+      padding: 15px;
+      border: 1px solid gray;
+      height: 150px;
+
+      /* display: flex;
+      align-items: center;
+      justify-content: center; */
+
+      position: relative;
+    }
+
+    .center-item>* {
+      border: 1px solid;
+      padding: 15px;
+
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    a[title="top"]:hover {
+      background-color: rgb(3, 53, 53);
+      color: rgb(251, 255, 0);
+    }
+
+    .user-image {
+      position: relative;
+    }
+
+    .user-image:hover .user-content {
+      display: block;
+    }
+
+    .user-content {
+      border: 1px solid;
+      padding: 15px;
+      display: none;
+      position: absolute;
+      width: 400px;
+      right: 45px;
+      background: white;
+    }
   </style>
 </head>
 
@@ -208,9 +274,21 @@
         <p>
           <a href="tel:+919603599809">+91 960 3599 809</a>
         </p>
+        <p>
+          <a href="https://google.com">Profile reference</a>
+        </p>
       </div>
       <div class="user-image">
         <img src="../images/Rohit.jpg" alt="myImage" height="100px">
+        <div class="user-content">
+          <h3>Rohit Sharma - Indian Captain</h3>
+          <p>
+            He is Indian Test, ODI and T20 Captain
+          </p>
+          <p>
+            He is the mabbu man and Mumbai indians captain.
+          </p>
+        </div>
       </div>
     </section>
     <hr />
@@ -386,8 +464,11 @@
 
       </div>
     </section>
+    <div class="center-item">
+      <input type="text" name="username" id="username" placeholder="User Name here...">
+    </div>
     <div class="actions">
-      <a href="#top-container" title="Go to top">&#10095;</a>
+      <a href="#top-container" title="top">&#10095;</a>
     </div>
 </body>
 

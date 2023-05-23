@@ -5,6 +5,10 @@
   <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     table,
     th,
     td {
@@ -17,6 +21,14 @@
 
     tr:nth-child(2n) td {
       background-color: lightgrey;
+    }
+
+    tr:first-child td {
+      background-color: yellow;
+    }
+
+    tr:last-child td {
+      background-color: plum;
     }
 
     .internal-links {
@@ -48,6 +60,43 @@
     #heading {
       color: red;
     }
+
+    nav {
+      background: teal;
+      width: 200px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 8px 15px;
+      color: white;
+      width: 100%;
+    }
+
+    nav ul li a:hover {
+      background-color: #095353;
+    }
+
+    .nav-items {
+      background-color: teal;
+    }
+
+    .nav-items a:hover {
+      background: #064e4e;
+    }
+
+    .nav-items a {
+      display: inline-block;
+      padding: 9px 13px;
+      color: white;
+      text-decoration: none;
+    }
   </style>
 </head>
 
@@ -59,6 +108,39 @@
   <h4>Hello India</h4>
   <h5>Hello India</h5>
   <h6>Hello India</h6>
+
+  <br>
+  <br>
+  <nav>
+    <ul>
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+      <li>
+        <a href="#">News</a>
+      </li>
+    </ul>
+  </nav>
+  <br>
+  <br>
+
+  <br>
+  <br>
+  <div class="nav-items">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    <a href="#">News</a>
+  </div>
+  <br>
+  <br>
+
 
   <!-- paras  -->
   <p>
